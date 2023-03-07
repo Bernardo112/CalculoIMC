@@ -1,0 +1,35 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <script src="components/amend.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+    </script>
+</head>
+<body>
+	<form>
+        <br><h1 style="text-align: center">Cálculo de IMC</h1><br>
+        <div class="input-group mb-3">
+            <input type="number" id="KM" step="0.001" class="form-control" placeholder="KG" aria-label="Username">
+        </div>
+        <div class="input-group mb-3">
+            <input type="number" id="altura" step="0.01" class="form-control" placeholder="altura" aria-label="Username">
+            <button class="btn btn-outline-secondary" type="submit" onclick="IMC()">Calcular</button>
+        </div>
+    </form>
+
+    <hr><br><br>
+
+    <h3 id="resultado" class="headingKM"></h3>
+</body>
+</html>
